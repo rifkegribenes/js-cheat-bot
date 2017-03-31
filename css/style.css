@@ -1,0 +1,174 @@
+body {
+font-family: 'Titillium Web', sans-serif;
+background-color: #00AEEF;
+color: #fff;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    line-height: 1em;
+}
+
+
+.content {
+    background-color: #fff;
+    color: #00AEEF;
+    border-radius: 20px;
+    padding: 5px 30px 30px 30px;
+}
+
+.logo {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.next {
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 0 auto 20px auto;
+    
+}
+
+.next:hover {
+    background-color: rgba(255,255,255,.8);
+    color: #00AEEF;
+}
+
+.dotnav {
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
+}
+
+.links {
+    text-align: center;
+    font-size: .75em;
+    margin-top: 40px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    padding-bottom: 2px;
+}
+
+
+.links a:hover {
+    border-bottom: 1px dotted white;
+}
+
+/* https://tympanus.net/codrops/2014/01/21/dot-navigation-styles/ */
+
+.dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 8px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	text-indent: -999em; /* make the text accessible to screen readers */
+	cursor: pointer;
+	position: absolute;
+}
+
+.dotstyle li a:focus {
+	outline: none;
+}
+
+.dotstyle-circlegrow li a {
+	overflow: hidden;
+	background-color: transparent;
+	box-shadow: inset 0 0 0 1px white;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+.dotstyle-circlegrow li a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	border-radius: 50%;
+	background-color: #fff;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transition: -webkit-transform 0.3s ease;
+	transition: transform 0.3s ease;
+}
+
+.dotstyle-circlegrow li a:hover,
+.dotstyle-circlegrow li a:focus {
+	opacity: 0.7;
+}
+
+.dotstyle-circlegrow li.active a::after {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+@media (max-width: 599px) {
+.container {
+  width: 100%;
+}
+
+}
