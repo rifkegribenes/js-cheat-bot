@@ -1,0 +1,65 @@
+<html>
+
+<body>
+    <canvas id="myCanvas" width="480" height="320">
+
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        function drawSwatch1() {
+            ctx.beginPath();
+            ctx.rect(50, 50, 50, 50);
+            ctx.fillStyle = "#cca43b";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function drawSwatch2() {
+            ctx.beginPath();
+            ctx.rect(125, 50, 50, 50);
+            ctx.fillStyle = "#0d5c63";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function drawSwatch3() {
+            ctx.beginPath();
+            ctx.rect(200, 50, 50, 50);
+            ctx.fillStyle = "#ffca3a";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function drawSwatch4() {
+            ctx.beginPath();
+            ctx.rect(275, 50, 50, 50);
+            ctx.fillStyle = "#bce784";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function drawSwatch5() {
+            ctx.beginPath();
+            ctx.rect(350, 50, 50, 50);
+            ctx.fillStyle = "#3a3335";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, 600, 100);
+            drawSwatch1();
+            drawSwatch2();
+            drawSwatch3();
+            drawSwatch4();
+            drawSwatch5();
+        }
+
+        draw();
+    </script>
+</body>
+
+</html>
