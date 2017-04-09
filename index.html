@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js-cheat-bot: your personal coding assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,600" rel="stylesheet">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo_white.png" alt="logo">
+            </div>
+        </div>
+
+        <div id="screen1">
+            <div class="content">
+                <h1>Welcome screen</h1>
+            </div>
+            <div class="footer">
+                <div class="next" aria-label="next">
+                    <a href="#" aria-label="About Me" onclick="menuFunction('screen2', 'menu-about');">
+                    About Me &nbsp;<i class="fa fa-caret-right fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="screen2" style="display: none;">
+            <div class="content">
+                <h1>Hello! I am your personal coding assistant</h1>
+                <p>Add me to Slack and I'll answer all your Javascript questions</p>
+                <ul>
+                    <li>I'll find MDN and StackOverflow resources for you</li>
+                    <li>Vote for your favorite answers to make me smarter</li>
+                    <li>I will learn from you and your team so I can deliver the best resources to help with your coding questions</li>
+                </ul>
+                <img src="img/screenshot1.jpg" alt="screenshot">
+            </div>
+            <!--//Screen2 Content-->
+
+            <div class="footer">
+                <div class="previous" aria-label="previous">
+                    <a href="#" aria-label="Welcome" onclick="menuFunction('screen1', 'menu-welcome');">
+                        <i class="fa fa-caret-left fa-lg"></i>&nbsp; Welcome</a>
+                </div>
+                <div class="next" aria-label="next">
+                    <a href="#" aria-label="How to Use" onclick="menuFunction('screen3', 'menu-lingo');">How to Use &nbsp;
+                    <i class="fa fa-caret-right fa-lg"></i></a>
+                </div>
+            </div>
+            <!--//Screen2 Footer-->
+        </div>
+        <!--//Screen2-->
+
+        <div id="screen3" style="display: none;">
+            <div class="content">
+                <h1>Lingo</h1>
+                <p>Learn these quick phrases and we can get started</p>
+                <ul>
+                    <li><span class="phrase">/JSy-hi </span></br>
+                        Type this for a list of everything I can do for you.
+                    </li>
+                    <li><span class="phrase">/JSy-query </span></br>
+                        Type this followed by your quetsion
+                    </li>
+                    <li><span class="phrase">/JSy-def </span></br>
+                        Type this followed by your JS term for a definition of the term and how to use it.
+                    </li>
+                </ul>
+                <img src="img/screenshot1.jpg" alt="screenshot">
+            </div>
+            <!--//Screen3 Content-->
+            <div class="footer">
+                <div class="previous" aria-label="previous">
+                    <a href="#" aria-label="About Me" onclick="menuFunction('screen2', 'menu-about');">
+                        <i class="fa fa-caret-left fa-lg"></i>&nbsp; About Me</a>
+                </div>
+            </div>
+            <!--Screen3 Footer-->
+        </div>
+        <!--//Screen3-->
+
+        <div class="footer">
+            <nav class="dotstyle dotstyle-circlegrow">
+                <ul class="dots">
+                    <li id="menu-welcome" class="active"><a href="#" aria-label="Welcome" onclick="menuFunction('screen1', 'menu-welcome');">Welcome</a></li>
+                    <li id="menu-about"><a href="#" aria-label="About" onclick="menuFunction('screen2', 'menu-about');">About</a></li>
+                    <li id="menu-lingo"><a href="#" aria-label="How to use" onclick="menuFunction('screen3', 'menu-lingo');">How to use</a></li>
+                </ul>
+            </nav>
+            <div class="links">
+                <a href="#"> Terms </a>
+                <a href="#"> Privacy </a>
+                <a href="#"> Help </a>
+            </div>
+        </div>
+    </div>
+    <!--//Container-->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
